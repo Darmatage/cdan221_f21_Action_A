@@ -9,10 +9,10 @@ public class GameHandler : MonoBehaviour {
       private GameObject player;
       public static int playerHealth;
       public int StartPlayerHealth = 100;
-     // public GameObject healthText;
+     public GameObject healthText;
 
-      public static int gotTokens = 0;
-     // public GameObject tokensText;
+    public static int gotTokens = 0;
+    public GameObject tokensText;
 
       public bool isDefending = false;
 
