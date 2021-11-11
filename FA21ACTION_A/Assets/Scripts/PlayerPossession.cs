@@ -21,21 +21,23 @@ public class PlayerPossession : MonoBehaviour
         
 		if ((Input.GetButtonDown("Possession")) && (isEnemyInRange())) {
                   Possess();
+				  Debug.Log("I am trying to possess");
                // anim.SetTrigger("Possess");
                // possessSFX.Play();
             }
-			else {Debug.Log("No enemy in range to possess");}
+			
     }
 	
 	public void Possess(){
 		//take 1 or more enemies in range
 		//activate their "isPossessed" variable
-		Collider2D enemies = Physics2D.OverlapCircle(transform.position, possessRange, enemyLayer);
-		enemies.GetComponent<EnemyMoveHit>().isPossessed = true;
 		
-		//for(int i = 0; i<enemies.Length; i++){
-		//	enemies[i].GetComponent<EnemyMoveHit>().isPossessed = true;
-		//}
+        Collider2D[] posEnemies = Physics2D.OverlapCircleAll(transform.position, possessRange, enemyLayer);
+           
+        foreach(Collider2D enemy in posEnemies){
+            Debug.Log("We possess " + enemy.name);
+            enemy.GetComponent<EnemyMoveHit>().isPossessed=true;
+        }
 	}
 	
 	public bool isEnemyInRange(){
@@ -44,6 +46,7 @@ public class PlayerPossession : MonoBehaviour
                   return true;
                   Debug.Log("An enemy is in range for possession!");
             }
+		else {Debug.Log("No enemy in range to possess"); return false;}
             return false;
 	}
 	
