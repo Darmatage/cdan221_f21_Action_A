@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 3850095037142769252}
   - component: {fileID: 7087111572715445092}
   - component: {fileID: 6386877796908436042}
+  - component: {fileID: 1133673931585201219}
   m_Layer: 0
   m_Name: PickUp_Boost
   m_TagString: Untagged
@@ -152,5 +153,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97fa4e8e9d155934381e8594ba295be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameHandler: {fileID: 0}
+  isHealthPickUp: 1
+  healthBoost: 50
+--- !u!114 &1133673931585201219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423112794357027275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c530837e51cf347ae75f18428b625b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

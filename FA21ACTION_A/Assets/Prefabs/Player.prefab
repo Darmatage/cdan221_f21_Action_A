@@ -127,6 +127,8 @@ GameObject:
   - component: {fileID: 7931985293435922701}
   - component: {fileID: 7931985293435922700}
   - component: {fileID: 7931985293435922688}
+  - component: {fileID: 1167787093315022036}
+  - component: {fileID: 1309526065260709801}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -250,3 +252,32 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   isAlive: 1
+--- !u!114 &1167787093315022036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7931985293435922703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efaaaaad14db54488d4a56acc62fae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb2D: {fileID: 0}
+--- !u!114 &1309526065260709801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7931985293435922703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d73c7977f436a34d98a841f0ecce03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possessRange: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
