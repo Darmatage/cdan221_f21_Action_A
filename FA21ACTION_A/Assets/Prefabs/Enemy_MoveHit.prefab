@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 3998032322924791544}
   - component: {fileID: 3998032322924791543}
   - component: {fileID: 3998032322924791542}
+  - component: {fileID: 4356005335417016494}
   m_Layer: 7
   m_Name: Enemy_MoveHit
   m_TagString: Untagged
@@ -181,8 +182,20 @@ MonoBehaviour:
   isPossessed: 0
   rb2D: {fileID: 0}
   jumpForce: 5
-  timer: 5
-  timerText: {fileID: 1335976302686950330}
+  possessionTimer: 5
+--- !u!114 &4356005335417016494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3998032322924791541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93f6298c2515204fa2667139ad535c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPossessed: 0
 --- !u!1 &3998032324621646415
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,7 +21,7 @@ public class PlayerPossession : MonoBehaviour
         
 		if ((Input.GetButtonDown("Possession")) && (isEnemyInRange())) {
                   Possess();
-				  Debug.Log("I am trying to possess");
+				  //Debug.Log("I possess");
                // anim.SetTrigger("Possess");
                // possessSFX.Play();
             }
@@ -35,8 +35,8 @@ public class PlayerPossession : MonoBehaviour
         Collider2D[] posEnemies = Physics2D.OverlapCircleAll(transform.position, possessRange, enemyLayer);
            
         foreach(Collider2D enemy in posEnemies){
-            Debug.Log("We possess " + enemy.name);
-            enemy.GetComponent<EnemyMoveHit>().isPossessed=true;
+            Debug.Log("I possess " + enemy.name);
+            enemy.GetComponent<EnemyPossession>().isPossessed=true;
         }
 	}
 	
