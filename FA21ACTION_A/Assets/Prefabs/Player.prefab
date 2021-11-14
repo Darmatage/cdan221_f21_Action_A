@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 7931985293435922688}
   - component: {fileID: 1167787093315022036}
   - component: {fileID: 1309526065260709801}
+  - component: {fileID: 2961174479695230765}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -281,3 +282,17 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &2961174479695230765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7931985293435922703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f87f733c5399840abfcfcc63d3217b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
