@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: gnome_village_15
+  m_Name: gnome_village_15 2
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 792587322213149904, guid: cfeefe7473e764e0b93b1cc44ae0e9d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
