@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3350941020051993340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatformMoveSYSTEM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3350941020938565399}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatPositionB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3350941021165051327}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatPositionA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3350941021624431942}
   - component: {fileID: 3350941021624431941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Paddle_fio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 6318388305075345682}
   - component: {fileID: 7842576527682622395}
   - component: {fileID: 7842576527682622396}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform_SideToSide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
