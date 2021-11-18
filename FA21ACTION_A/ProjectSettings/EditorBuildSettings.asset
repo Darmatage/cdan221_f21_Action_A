@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Turotial_Level.unity
+    guid: 34e9015bf72280149bd8cc4b17a01a35
   m_configObjects: {}

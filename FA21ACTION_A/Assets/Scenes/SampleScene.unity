@@ -8638,6 +8638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformMoveSYSTEM
       objectReference: {fileID: 0}
+    - target: {fileID: 7842576527682622395, guid: ce56dadeea80f3947a8cd007a82059a4, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce56dadeea80f3947a8cd007a82059a4, type: 3}
 --- !u!1001 &3998032323965515104
