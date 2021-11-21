@@ -34,6 +34,7 @@ public class DoorManagerScript : MonoBehaviour
 		if (isPadOn==true) 
         {
 			anim.SetBool ("isDoorOpen", false);
+			//want to wait for 2 seconds here
 			 gameObject.GetComponent<BoxCollider2D>().enabled = false;
 		    
 		    
