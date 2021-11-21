@@ -11,6 +11,7 @@ public class DoorManagerScript : MonoBehaviour
 	
 	private bool isPadOn;
 	
+	public float timer =1f; 
 	
     public PressurePadDoor myPressurePadDoor;
 	
@@ -35,7 +36,8 @@ public class DoorManagerScript : MonoBehaviour
         {
 			anim.SetBool ("isDoorOpen", false);
 			//want to wait for 2 seconds here
-			 gameObject.GetComponent<BoxCollider2D>().enabled = false;
+			StartCoroutine(myDelay());
+			//gameObject.GetComponent<BoxCollider2D>().enabled = false;
 		    
 		    
 		}
@@ -46,6 +48,12 @@ public class DoorManagerScript : MonoBehaviour
 		}
 	}
 	
+	IEnumerator myDelay(){
+     yield return new WaitForSeconds(timer); //will delay about two seconds. Set this number as desired
+	  Debug.Log("1 second past");
+     gameObject.GetComponent<BoxCollider2D>().enabled = false;
+}
+
    
 }
 	
