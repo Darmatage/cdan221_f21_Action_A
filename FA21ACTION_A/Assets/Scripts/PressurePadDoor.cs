@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class PressurePadDoor : MonoBehaviour
 {
-  private void OnControllerColliderHit (ControllerColliderHit hit)
-{
-    if(hit.gameObject.tag == "PressurePad")
-    {
-        //Animation.Play("Door_Open")
-    }
-    else
-    {
-    //Animation.Play("Door_Colse")
-    }
-}
+	
+	public bool onPlate = false;
+	
+    public void OnCollisionEnter2D(Collision2D other) {
+              if (other.gameObject.tag == "Player" || other.gameObject.tag == "Enemy") { //also add or enemey tag
+                    
+					onPlate=true;
+					
+              }
+			  
+	}
+	
+	  public void OnCollisionExit2D(Collision2D other) {
+              if (other.gameObject.tag == "Player" || other.gameObject.tag == "Enemy") { //also add or enemey tag
+                    
+					onPlate=false;
+					
+              }
+			  
+	} 
 }
