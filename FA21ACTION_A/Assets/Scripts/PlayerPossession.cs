@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerPossession : MonoBehaviour
 {
-	
+	public Animator anim;
+	private bool isCoalControlled;
+	private Renderer rend;
 	public float possessRange = 10f;
 	public LayerMask enemyLayer;
 	
@@ -12,7 +15,10 @@ public class PlayerPossession : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+		 anim = GetComponentInChildren<Animator>();
+		  rend = GetComponentInChildren<Renderer> ();
+        anim.SetBool ("isCoalControlled", false);
+		isCoalControlled = false;
     }
 
     // Update is called once per frame
@@ -21,10 +27,14 @@ public class PlayerPossession : MonoBehaviour
         
 		if ((Input.GetButtonDown("Possession")) && (isEnemyInRange())) {
                   Possess();
+				  anim.SetBool ("isCoalControlled", true);
 				  //Debug.Log("I possess");
                // anim.SetTrigger("Possess");
                // possessSFX.Play();
             }
+			else{	
+			anim.SetBool ("isCoalControlled", false);	
+			}
 			
     }
 	

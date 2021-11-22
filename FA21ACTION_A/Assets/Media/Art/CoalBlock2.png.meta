@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: c1c98449b7db0204d9fd8fa59d7b2a6a
+guid: 91342301dd4679b49b6d40b40228dd99
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4135036919272965049
-    second: CoalBlock_0
+      213: 6262803830456203704
+    second: CoalBlock2_0
   - first:
-      213: -7181969411753581783
-    second: CoalBlock_1
+      213: 8464618254029395566
+    second: CoalBlock2_1
   - first:
-      213: 487114612641508851
-    second: CoalBlock_2
+      213: -7276635239162221358
+    second: CoalBlock2_2
   - first:
-      213: -7982498373924477787
-    second: CoalBlock_3
+      213: -4178268665337979649
+    second: CoalBlock2_3
   - first:
-      213: 8698529136122141387
-    second: CoalBlock_4
+      213: 7277747183613501294
+    second: CoalBlock2_4
   - first:
-      213: -4408689140777935697
-    second: CoalBlock_5
+      213: 7454090023475765762
+    second: CoalBlock2_5
   - first:
-      213: 4850370723715394714
-    second: CoalBlock_6
+      213: -4763349031951169923
+    second: CoalBlock2_6
   - first:
-      213: 6594718793102235254
-    second: CoalBlock_7
+      213: -8090628184080607471
+    second: CoalBlock2_7
   - first:
-      213: -6027414750599646184
-    second: CoalBlock_8
+      213: 1877183724762073151
+    second: CoalBlock2_8
   - first:
-      213: 9204175053443989751
-    second: CoalBlock_9
+      213: -4592053480667409440
+    second: CoalBlock2_9
   - first:
-      213: 4196353049225156294
-    second: CoalBlock_10
+      213: -1337710520552556091
+    second: CoalBlock2_10
   - first:
-      213: -6498210343089168774
-    second: CoalBlock_11
+      213: 7749437091293042120
+    second: CoalBlock2_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CoalBlock_0
+      name: CoalBlock2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74cfb9d84d56d96c0800000000000000
-      internalID: -4135036919272965049
+      spriteID: 8b93c4ce6e2f9e650800000000000000
+      internalID: 6262803830456203704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoalBlock_1
+      name: CoalBlock2_1
       rect:
         serializedVersion: 2
         x: 128
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 923e4b82fd4845c90800000000000000
-      internalID: -7181969411753581783
+      spriteID: e6695be547d587570800000000000000
+      internalID: 8464618254029395566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoalBlock_2
+      name: CoalBlock2_2
       rect:
         serializedVersion: 2
         x: 256
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fd266bc82492c600800000000000000
-      internalID: 487114612641508851
+      spriteID: 2dc65a1adc2340b90800000000000000
+      internalID: -7276635239162221358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoalBlock_3
+      name: CoalBlock2_3
       rect:
         serializedVersion: 2
         x: 384
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a42912a508783190800000000000000
-      internalID: -7982498373924477787
+      spriteID: ffc526a49cec306c0800000000000000
+      internalID: -4178268665337979649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoalBlock_4
+      name: CoalBlock2_4
       rect:
         serializedVersion: 2
         x: 0
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bca12fa992267b870800000000000000
-      internalID: 8698529136122141387
+      spriteID: e6fd16c1180cff460800000000000000
+      internalID: 7277747183613501294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoalBlock_5
+      name: CoalBlock2_5
       rect:
         serializedVersion: 2
         x: 128
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fac1fcea59031d2c0800000000000000
-      internalID: -4408689140777935697
+      spriteID: 2026e05026f327760800000000000000
+      internalID: 7454090023475765762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoalBlock_6
+      name: CoalBlock2_6
       rect:
         serializedVersion: 2
         x: 256
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9ca200997aff4340800000000000000
-      internalID: 4850370723715394714
+      spriteID: d768951fa4f25edb0800000000000000
+      internalID: -4763349031951169923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoalBlock_7
+      name: CoalBlock2_7
       rect:
         serializedVersion: 2
         x: 384
@@ -300,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67693705dc5258b50800000000000000
-      internalID: 6594718793102235254
+      spriteID: 1179c16588058bf80800000000000000
+      internalID: -8090628184080607471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoalBlock_8
+      name: CoalBlock2_8
       rect:
         serializedVersion: 2
         x: 0
@@ -321,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 814fe8c08325a5ca0800000000000000
-      internalID: -6027414750599646184
+      spriteID: f388694e6a81d0a10800000000000000
+      internalID: 1877183724762073151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoalBlock_9
+      name: CoalBlock2_9
       rect:
         serializedVersion: 2
         x: 128
@@ -342,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f08a0ff17ccbbf70800000000000000
-      internalID: 9204175053443989751
+      spriteID: 0e3193760bfb540c0800000000000000
+      internalID: -4592053480667409440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoalBlock_10
+      name: CoalBlock2_10
       rect:
         serializedVersion: 2
         x: 256
@@ -363,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c651337dd07c3a30800000000000000
-      internalID: 4196353049225156294
+      spriteID: 5c9792a7e5f7f6de0800000000000000
+      internalID: -1337710520552556091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CoalBlock_11
+      name: CoalBlock2_11
       rect:
         serializedVersion: 2
         x: 384
@@ -384,8 +384,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7e96683f18b1d5a0800000000000000
-      internalID: -6498210343089168774
+      spriteID: 8c512cbe9f78b8b60800000000000000
+      internalID: 7749437091293042120
       vertices: []
       indices: 
       edges: []

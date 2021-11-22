@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class EnemyMoveHit : MonoBehaviour {
 
-    //public Animator anim;
+    public Animator anim;
+	 private bool isCoalAttack;
     public float speed = 4f;
     private Transform target;
     public int damage = 5;
@@ -18,6 +19,7 @@ public class EnemyMoveHit : MonoBehaviour {
     public bool isAttacking = false;
 
     void Start () {
+		anim = GetComponentInChildren<Animator>();
         rend = GetComponentInChildren<Renderer> ();
 
         if (GameObject.FindGameObjectWithTag ("Player") != null) {
@@ -27,11 +29,15 @@ public class EnemyMoveHit : MonoBehaviour {
         if (GameObject.FindWithTag ("GameHandler") != null) {
             gameHandler = GameObject.FindWithTag ("GameHandler").GetComponent<GameHandler> ();
         }
+		
+		anim.SetBool ("isCoalAttack", false);
+		isCoalAttack = false;
     }
 
     void Update () {
+		
+				
               float DistToPlayer = Vector3.Distance(transform.position, target.position);
-
 		  if (this.GetComponent<EnemyPossession>().isPossessed == false){ //isPossessed #1
               if ((target != null) && (DistToPlayer <= attackRange)){
                      transform.position = Vector2.MoveTowards (transform.position, target.position, speed * Time.deltaTime);
@@ -50,7 +56,7 @@ public class EnemyMoveHit : MonoBehaviour {
     public void OnCollisionEnter2D(Collision2D collision){  //isPossessed #2
               if ((collision.gameObject.tag == "Player")&&(this.GetComponent<EnemyPossession>().isPossessed == false)) {
                      isAttacking = true;
-                     //anim.SetBool("Attack", true);
+                     anim.SetBool("isCoalAttack", true);
                      gameHandler.playerGetHit(damage);
                      rend.material.color = new Color(2.4f, 0.9f, 0.9f, 0.5f);
                      StartCoroutine(HitEnemy());
@@ -60,7 +66,7 @@ public class EnemyMoveHit : MonoBehaviour {
     public void OnCollisionExit2D(Collision2D collision){
               if (collision.gameObject.tag == "Player") {
                      isAttacking = false;
-                     //anim.SetBool("Attack", false);
+                     anim.SetBool("isCoalAttack", false);
               }
     }
 
