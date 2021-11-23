@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerPossession : MonoBehaviour
 {
 	public Animator anim;
-	private bool isCoalControlled;
+	//private bool isCoalControlled;
 	private Renderer rend;
 	public float possessRange = 10f;
 	public LayerMask enemyLayer;
@@ -18,7 +18,7 @@ public class PlayerPossession : MonoBehaviour
 		 anim = GetComponentInChildren<Animator>();
 		  rend = GetComponentInChildren<Renderer> ();
         anim.SetBool ("isCoalControlled", false);
-		isCoalControlled = false;
+		//isCoalControlled = false;
     }
 
     // Update is called once per frame
@@ -29,11 +29,12 @@ public class PlayerPossession : MonoBehaviour
                   Possess();
 				  anim.SetBool ("isCoalControlled", true);
 				  //Debug.Log("I possess");
-               // anim.SetTrigger("Possess");
+               //anim.SetTrigger("Controlledcoal");
                // possessSFX.Play();
             }
 			else{	
 			anim.SetBool ("isCoalControlled", false);	
+			//anim.SetTrigger("Attackcoal");
 			}
 			
     }
@@ -43,7 +44,7 @@ public class PlayerPossession : MonoBehaviour
 		//activate their "isPossessed" variable
 		
         Collider2D[] posEnemies = Physics2D.OverlapCircleAll(transform.position, possessRange, enemyLayer);
-           
+        
         foreach(Collider2D enemy in posEnemies){
             Debug.Log("I possess " + enemy.name);
             enemy.GetComponent<EnemyPossession>().isPossessed=true;

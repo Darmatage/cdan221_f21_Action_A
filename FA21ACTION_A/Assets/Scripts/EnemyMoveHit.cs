@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EnemyMoveHit : MonoBehaviour {
 
     public Animator anim;
-	 private bool isCoalAttack;
+	 //private bool isCoalAttack;
     public float speed = 4f;
     private Transform target;
     public int damage = 5;
@@ -31,7 +31,7 @@ public class EnemyMoveHit : MonoBehaviour {
         }
 		
 		anim.SetBool ("isCoalAttack", false);
-		isCoalAttack = false;
+		//isCoalAttack = false;
     }
 
     void Update () {
@@ -41,10 +41,11 @@ public class EnemyMoveHit : MonoBehaviour {
 		  if (this.GetComponent<EnemyPossession>().isPossessed == false){ //isPossessed #1
               if ((target != null) && (DistToPlayer <= attackRange)){
                      transform.position = Vector2.MoveTowards (transform.position, target.position, speed * Time.deltaTime);
+					 anim.SetBool("isCoalAttack", true);
                      if (isAttacking == false) {
-                            //anim.SetBool("Walk", true);
+                            anim.SetBool("isCoalAttack", false);
                      }
-                     //else  { anim.SetBool("Walk", false);}
+                     //else  { anim.SetBool("isCoalAttack", false);}
               } 
                //else { anim.SetBool("Walk", false);}
 		  }
