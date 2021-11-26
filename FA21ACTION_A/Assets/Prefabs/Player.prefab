@@ -40,6 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7931985292771590000}
   - component: {fileID: 7931985292771590001}
+  - component: {fileID: 4286853014928474785}
   m_Layer: 0
   m_Name: PlayerArt
   m_TagString: Untagged
@@ -113,6 +114,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4286853014928474785
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7931985292771590003}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 18e9c2a14cbf66245a3c183cb11cff66, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7931985293435922703
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,6 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d73c7977f436a34d98a841f0ecce03a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   possessRange: 10
   enemyLayer:
     serializedVersion: 2

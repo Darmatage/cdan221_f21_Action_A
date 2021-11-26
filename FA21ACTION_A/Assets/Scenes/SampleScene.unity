@@ -8923,6 +8923,14 @@ PrefabInstance:
       propertyPath: enemyLayer.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 7931985292771590000, guid: 24bce4566dc9cb841bec6002b3a754fe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931985292771590000, guid: 24bce4566dc9cb841bec6002b3a754fe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7931985293435922691, guid: 24bce4566dc9cb841bec6002b3a754fe, type: 3}
       propertyPath: m_RootOrder
       value: 4
