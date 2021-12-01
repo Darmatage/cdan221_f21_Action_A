@@ -174,15 +174,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775a261bbaa049d45b3786817ac643fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   speed: 4
   damage: 10
   EnemyLives: 3
   attackRange: 10
   isAttacking: 0
-  isPossessed: 0
-  rb2D: {fileID: 0}
-  jumpForce: 5
-  possessionTimer: 5
 --- !u!114 &4356005335417016494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +193,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPossessed: 0
+  possessionTimer: 5
+  rb2D: {fileID: 0}
+  jumpForce: 5
 --- !u!1 &3998032324621646415
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,8 +206,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3998032324621646416}
   - component: {fileID: 3998032324621646417}
+  - component: {fileID: 1108416082649832276}
   m_Layer: 0
-  m_Name: FireBlockEnemy
+  m_Name: FireBlockEnemy_Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,6 +280,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1108416082649832276
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3998032324621646415}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a85cda512299a8d4889ee96c6177674b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6669808548497919904
 GameObject:
   m_ObjectHideFlags: 0

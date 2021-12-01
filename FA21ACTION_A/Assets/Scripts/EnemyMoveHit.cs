@@ -31,6 +31,7 @@ public class EnemyMoveHit : MonoBehaviour {
         }
 		
 		anim.SetBool ("isCoalAttack", false);
+		anim.SetBool ("isCoalControlled", false);
 		//isCoalAttack = false;
     }
 
@@ -42,13 +43,14 @@ public class EnemyMoveHit : MonoBehaviour {
               if ((target != null) && (DistToPlayer <= attackRange)){
                      transform.position = Vector2.MoveTowards (transform.position, target.position, speed * Time.deltaTime);
 					 anim.SetBool("isCoalAttack", true);
-                     if (isAttacking == false) {
-                            anim.SetBool("isCoalAttack", false);
-                     }
-                     //else  { anim.SetBool("isCoalAttack", false);}
-              } 
-               //else { anim.SetBool("Walk", false);}
+                     //if (isAttacking == false) {
+                            //anim.SetBool("isCoalAttack", false);
+                     // }
+			  }
+				else  {anim.SetBool("isCoalAttack", false);}
+               
 		  }
+		  else  {anim.SetBool("isCoalAttack", false);}
 
     }
 
@@ -57,7 +59,7 @@ public class EnemyMoveHit : MonoBehaviour {
     public void OnCollisionEnter2D(Collision2D collision){  //isPossessed #2
               if ((collision.gameObject.tag == "Player")&&(this.GetComponent<EnemyPossession>().isPossessed == false)) {
                      isAttacking = true;
-                     anim.SetBool("isCoalAttack", true);
+                    // anim.SetBool("isCoalAttack", true);
                      gameHandler.playerGetHit(damage);
                      rend.material.color = new Color(2.4f, 0.9f, 0.9f, 0.5f);
                      StartCoroutine(HitEnemy());
@@ -67,7 +69,7 @@ public class EnemyMoveHit : MonoBehaviour {
     public void OnCollisionExit2D(Collision2D collision){
               if (collision.gameObject.tag == "Player") {
                      isAttacking = false;
-                     anim.SetBool("isCoalAttack", false);
+                    // anim.SetBool("isCoalAttack", false);
               }
     }
 

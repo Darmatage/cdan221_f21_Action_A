@@ -6,9 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8914d2bacc637b54abe66d79f67b4c93
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 34e9015bf72280149bd8cc4b17a01a35
+  - enabled: 1
+    path: Assets/Scenes/Village.unity
+    guid: f6a8fcec15b564f258478bf4fe03213d
+  - enabled: 1
+    path: Assets/Scenes/Volcano_Level.unity
+    guid: 8b32ebdcd6f558e41a97a34f49c71b00
+  - enabled: 1
+    path: Assets/Scenes/End_Win.unity
+    guid: 4fe45657408036c4bb91b36ae2a3340d
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 3ea9b09e812d7da4dbc8c30d0ce01f33
   m_configObjects: {}

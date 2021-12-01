@@ -6,7 +6,7 @@ public class EnemyPossession : MonoBehaviour
 {
 	
 	public bool isPossessed = false;
-	
+	public Animator anim;
 	public int possessionTimer = 5;
 	private int possessionTimerStart;
     private float theTimer = 0f;
@@ -21,6 +21,7 @@ public class EnemyPossession : MonoBehaviour
 	private Renderer rend;
 
     void Start(){
+		 anim = GetComponentInChildren<Animator>();
 		possessionTimerStart = possessionTimer;
 		rb2D = transform.GetComponent<Rigidbody2D>();
         rend = GetComponentInChildren<Renderer>();
@@ -29,6 +30,7 @@ public class EnemyPossession : MonoBehaviour
 	void Update (){
 		//possessed actions
 		if (isPossessed==true) {
+			anim.SetBool ("isCoalControlled", true);
 			//Debug.Log("I am possessed!");
 			hMove = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
 			transform.position = transform.position + hMove * runSpeed * Time.deltaTime;
@@ -41,7 +43,7 @@ public class EnemyPossession : MonoBehaviour
                 // animator.SetTrigger("Jump");
                 // JumpSFX.Play();
             }
-		}
+		}else {anim.SetBool ("isCoalControlled", false);}
 	}
 
     void FixedUpdate(){
