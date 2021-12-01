@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 1167787093315022036}
   - component: {fileID: 1309526065260709801}
   - component: {fileID: 2961174479695230765}
+  - component: {fileID: 2320875065093406285}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -348,3 +349,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
+--- !u!114 &2320875065093406285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7931985293435922703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa09075e098f69044ae420a85c7353d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPt: {fileID: 3786172448980673564}
+  attackRange: 0.5
+  attackRate: 2
+  attackDamage: 40
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
