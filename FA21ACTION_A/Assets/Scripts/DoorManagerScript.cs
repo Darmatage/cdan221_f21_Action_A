@@ -11,7 +11,7 @@ public class DoorManagerScript : MonoBehaviour
 	
 	private bool isPadOn;
 	
-	public float timer =1f; 
+	public float timer =0.05f;  
 	
     public PressurePadDoor myPressurePadDoor;
 	

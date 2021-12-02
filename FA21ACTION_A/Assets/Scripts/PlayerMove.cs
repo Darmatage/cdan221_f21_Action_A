@@ -12,7 +12,7 @@ public class PlayerMove : MonoBehaviour {
       public bool isAlive = true;
       //public AudioSource WalkSFX;
       private Vector3 hMove;
-
+		
       void Start(){
            //animator = gameObject.GetComponentInChildren<Animator>();
            rb2D = transform.GetComponent<Rigidbody2D>();

@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class PlayerJump : MonoBehaviour {
 
-      //public Animator animator;
+      public Animator animator;
       public Rigidbody2D rb;
       public float jumpForce = 20f;
       public Transform feet;
       public LayerMask groundLayer;
       public LayerMask enemyLayer;
       public bool isAlive = true;
+	  //public float timer =0.02f; 
       //public AudioSource JumpSFX;
 
       void Start(){
-            //animator = gameObject.GetComponentInChildren<Animator>();
+            animator = gameObject.GetComponentInChildren<Animator>();
             rb = GetComponent<Rigidbody2D>();
       }
 
      void Update() {
            if ((Input.GetButtonDown("Jump")) && (IsGrounded()) && (isAlive==true)) {
-                  Jump();
-               // animator.SetTrigger("Jump");
+                animator.SetTrigger("PlayerDoesJump"); 
+				//StartCoroutine(myDelay());
+               Jump();
                // JumpSFX.Play();
             }
       }
@@ -41,4 +43,10 @@ public class PlayerJump : MonoBehaviour {
             }
             return false;
       }
+	 // IEnumerator myDelay(){
+     //yield return new WaitForSeconds(timer); //will delay about two seconds. Set this number as desired
+	  //Debug.Log("1 second past");
+//Jump();
+//}
+	
 }

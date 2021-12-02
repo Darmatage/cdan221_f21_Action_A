@@ -13,7 +13,7 @@ public class EnemyMeleeDamage : MonoBehaviour{
               currentHealth = maxHealth;
        }
 
-       public void TakeDamage(int damage){
+       public void TakeDamage(int damage = 20){
               currentHealth -= damage;
               //anim.SetTrigger ("Hurt");
               if (currentHealth <= 0){
@@ -34,5 +34,7 @@ public class EnemyMeleeDamage : MonoBehaviour{
               Debug.Log("You Killed a baddie. You deserve loot!");
               Destroy(gameObject);
        }
+	   
+	   
 
 }
