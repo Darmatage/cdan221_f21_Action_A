@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: e529fa45a34bb418987533254960a95d
+guid: 7b0479da074664b3d91ec5f5ce058377
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6047312800134311931
-    second: Cave_Dirt_Tiles_0
+      213: 5756218331519764883
+    second: Cave_Ceiling_Tiles_0
   - first:
-      213: 3008823862363499104
-    second: Cave_Dirt_Tiles_1
+      213: -8837879590734448899
+    second: Cave_Ceiling_Tiles_1
   - first:
-      213: -8963359010634625502
-    second: Cave_Dirt_Tiles_2
+      213: -4400846404755323447
+    second: Cave_Ceiling_Tiles_2
   - first:
-      213: 1482423092617624893
-    second: Cave_Dirt_Tiles_3
+      213: 3012090384613391579
+    second: Cave_Ceiling_Tiles_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -80,7 +80,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -92,7 +92,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cave_Dirt_Tiles_0
+      name: Cave_Ceiling_Tiles_0
       rect:
         serializedVersion: 2
         x: 0
@@ -117,14 +117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bffada1a3fe5ce350800000000000000
-      internalID: 6047312800134311931
+      spriteID: 399c3d3231232ef40800000000000000
+      internalID: 5756218331519764883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cave_Dirt_Tiles_1
+      name: Cave_Ceiling_Tiles_1
       rect:
         serializedVersion: 2
         x: 64
@@ -138,14 +138,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06a25e38c5d71c920800000000000000
-      internalID: 3008823862363499104
+      spriteID: df6399a565b895580800000000000000
+      internalID: -8837879590734448899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cave_Dirt_Tiles_2
+      name: Cave_Ceiling_Tiles_2
       rect:
         serializedVersion: 2
         x: 0
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22e83d04870cb9380800000000000000
-      internalID: -8963359010634625502
+      spriteID: 9c50185f28d0de2c0800000000000000
+      internalID: -4400846404755323447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cave_Dirt_Tiles_3
+      name: Cave_Ceiling_Tiles_3
       rect:
         serializedVersion: 2
         x: 64
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3d3f42d2ff929410800000000000000
-      internalID: 1482423092617624893
+      spriteID: bdc304efe381dc920800000000000000
+      internalID: 3012090384613391579
       vertices: []
       indices: 
       edges: []
