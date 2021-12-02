@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8361725939060895268}
   m_Layer: 7
   m_Name: Enemy_MoveHit
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,9 +224,9 @@ GameObject:
   - component: {fileID: 3998032324621646416}
   - component: {fileID: 3998032324621646417}
   - component: {fileID: 1108416082649832276}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FireBlockEnemy_Art
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -286,7 +286,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 90
-  m_Sprite: {fileID: 21300000, guid: ff106766b51743f46b572fc55c724bc5, type: 3}
+  m_Sprite: {fileID: 6262803830456203704, guid: 91342301dd4679b49b6d40b40228dd99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
