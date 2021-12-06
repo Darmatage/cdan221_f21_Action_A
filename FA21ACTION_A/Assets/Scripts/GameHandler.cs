@@ -88,7 +88,7 @@ public class GameHandler : MonoBehaviour {
               sceneName = SceneManager.GetActiveScene().name;
               if (CurrentHealth >= MaxHealth){CurrentHealth = MaxHealth;}
               if ((CurrentHealth <= 0) && (sceneName != "EndLose")&& (Lives <= 0)){
-                     SceneManager.LoadScene("EndLose");
+                     //SceneManager.LoadScene("EndLose");
                } else if (CurrentHealth <= 0){ UpdateLives(-1, "down"); }
        }
 	   
