@@ -12,6 +12,16 @@ public class GameHandler : MonoBehaviour {
       public static int playerHealth;
       public int StartPlayerHealth = 100;
      public GameObject healthText;
+	  public static int Lives = 4;
+       public int maxLives = 4;
+       public GameObject lifeHeart1;
+       public GameObject lifeHeart2;
+       public GameObject lifeHeart3;
+       public GameObject lifeHeart4;
+	     public static int MaxHealth = 100;
+       public static int CurrentHealth = 100;
+       private string sceneName;
+
 
     public static int gotTokens = 0;
     public GameObject tokensText;
@@ -72,7 +82,34 @@ public class GameHandler : MonoBehaviour {
             gotTokens += newTokens;
             updateStatsDisplay();
       }
+     public void TakeDamage(int damage){
+              CurrentHealth -= damage;
+              UpdateHealth();
+              sceneName = SceneManager.GetActiveScene().name;
+              if (CurrentHealth >= MaxHealth){CurrentHealth = MaxHealth;}
+              if ((CurrentHealth <= 0) && (sceneName != "EndLose")&& (Lives <= 0)){
+                     SceneManager.LoadScene("EndLose");
+               } else if (CurrentHealth <= 0){ UpdateLives(-1, "down"); }
+       }
+	   
+	   public void UpdateLives(int lifeChange, string changeDir){
+              Lives += lifeChange;
+              if (changeDir == "down"){
+                     if (lifeHeart4.activeInHierarchy){lifeHeart4.SetActive(false);}  
+                     else if (lifeHeart3.activeInHierarchy){lifeHeart3.SetActive(false);}
+                     else if (lifeHeart2.activeInHierarchy){lifeHeart2.SetActive(false);}
+                     else if (lifeHeart1.activeInHierarchy){lifeHeart1.SetActive(false);}
+              } else if (changeDir == "up"){
+                     if (!lifeHeart2.activeInHierarchy){lifeHeart2.SetActive(true);}
+                     else if (!lifeHeart3.activeInHierarchy){lifeHeart3.SetActive(true);}
+                     else if (!lifeHeart4.activeInHierarchy){lifeHeart4.SetActive(true);}
+              }
+       }
 
+       public void UpdateHealth(){
+              Text healthTextB = healthText.GetComponent<Text>();
+              healthTextB.text = "Current Health: " + CurrentHealth + "\n Max Health: " + MaxHealth;
+       }
       public void playerGetHit(int damage){
            if (isDefending == false){
                   playerHealth -= damage;
