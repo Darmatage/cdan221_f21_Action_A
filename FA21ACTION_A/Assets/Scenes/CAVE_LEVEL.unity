@@ -2414,6 +2414,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7019444120087873494, guid: 35be2cd984751fe40a5067c24e3ced04, type: 3}
+      propertyPath: backToStart
+      value: 
+      objectReference: {fileID: 1283944659}
+    - target: {fileID: 7019444120087873494, guid: 35be2cd984751fe40a5067c24e3ced04, type: 3}
+      propertyPath: gameHandlerObj
+      value: 
+      objectReference: {fileID: 1002447303}
     - target: {fileID: 7019444120087873495, guid: 35be2cd984751fe40a5067c24e3ced04, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -12,12 +12,16 @@ public class GameHandler : MonoBehaviour {
       //public static int playerHealth;
       //public int StartPlayerHealth = 4;
      public GameObject healthText;
-	  public static int Lives = 4;
-       public int maxLives = 4;
+	  public static int Lives = 8;
+       public int maxLives = 8;
        public GameObject lifeHeart1;
        public GameObject lifeHeart2;
        public GameObject lifeHeart3;
        public GameObject lifeHeart4;
+	    public GameObject lifeHeart5;
+       public GameObject lifeHeart6;
+       public GameObject lifeHeart7;
+       public GameObject lifeHeart8;
 	    // public static int MaxHealth = 4;
        //public static int CurrentHealth = 4;
        private string sceneName;
@@ -96,7 +100,11 @@ public class GameHandler : MonoBehaviour {
 	   public void UpdateLives(int lifeChange, string changeDir){
               Lives += lifeChange;
               if (changeDir == "down"){
-                     if (lifeHeart4.activeInHierarchy){lifeHeart4.SetActive(false);}  
+                     if (lifeHeart8.activeInHierarchy){lifeHeart8.SetActive(false);} 
+						else if (lifeHeart7.activeInHierarchy){lifeHeart7.SetActive(false);}
+						else if (lifeHeart6.activeInHierarchy){lifeHeart6.SetActive(false);}
+						else if (lifeHeart5.activeInHierarchy){lifeHeart5.SetActive(false);}
+						else if (lifeHeart4.activeInHierarchy){lifeHeart4.SetActive(false);}					 
                      else if (lifeHeart3.activeInHierarchy){lifeHeart3.SetActive(false);}
                      else if (lifeHeart2.activeInHierarchy){lifeHeart2.SetActive(false);}
                      else if (lifeHeart1.activeInHierarchy){lifeHeart1.SetActive(false);}
@@ -104,6 +112,10 @@ public class GameHandler : MonoBehaviour {
                      if (!lifeHeart2.activeInHierarchy){lifeHeart2.SetActive(true);}
                      else if (!lifeHeart3.activeInHierarchy){lifeHeart3.SetActive(true);}
                      else if (!lifeHeart4.activeInHierarchy){lifeHeart4.SetActive(true);}
+					 else if (!lifeHeart5.activeInHierarchy){lifeHeart5.SetActive(true);}
+					 else if (!lifeHeart6.activeInHierarchy){lifeHeart6.SetActive(true);}
+					 else if (!lifeHeart7.activeInHierarchy){lifeHeart7.SetActive(true);}
+					 else if (!lifeHeart8.activeInHierarchy){lifeHeart8.SetActive(true);}
               }
        }
 

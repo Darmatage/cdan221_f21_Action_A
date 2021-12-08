@@ -2113,10 +2113,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthText: {fileID: 8751306383459446947}
   maxLives: 4
-  lifeHeart1: {fileID: 5026611985146446322}
-  lifeHeart2: {fileID: 2067068526655702798}
-  lifeHeart3: {fileID: 2646452918466128264}
-  lifeHeart4: {fileID: 4036437550983819707}
+  lifeHeart1: {fileID: 4403339336483267981}
+  lifeHeart2: {fileID: 178714510097975919}
+  lifeHeart3: {fileID: 4764109354549478576}
+  lifeHeart4: {fileID: 5422489335562403132}
+  lifeHeart5: {fileID: 5026611985146446322}
+  lifeHeart6: {fileID: 2067068526655702798}
+  lifeHeart7: {fileID: 2646452918466128264}
+  lifeHeart8: {fileID: 4036437550983819707}
   tokensText: {fileID: 8751306383240219549}
   pauseMenuUI: {fileID: 8404926800280549334}
   mixer: {fileID: 24100000, guid: 4282adb439b9b4446980286ef91f6e71, type: 2}
