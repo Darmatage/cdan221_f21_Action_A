@@ -8,6 +8,8 @@ public class EnemyMeleeDamage : MonoBehaviour{
        public GameObject healthLoot;
        public int maxHealth = 100;
        public int currentHealth;
+	   public AudioSource EnemyHitSFX;
+	   public AudioSource EnemyDieSFX;
 
        void Start(){
               currentHealth = maxHealth;
@@ -15,9 +17,11 @@ public class EnemyMeleeDamage : MonoBehaviour{
 
        public void TakeDamage(int damage = 20){
               currentHealth -= damage;
+			  EnemyHitSFX.Play();
               //anim.SetTrigger ("Hurt");
               if (currentHealth <= 0){
                      Die();
+					 EnemyDieSFX.Play();
               }
        }
 

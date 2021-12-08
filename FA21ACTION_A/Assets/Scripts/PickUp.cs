@@ -8,6 +8,8 @@ public class PickUp : MonoBehaviour{
       //public playerVFX playerPowerupVFX;
       public bool isHealthPickUp = true;
       //public bool isSpeedBoostPickUp = false;
+	   public AudioSource heartSFX;
+
 
       public int healthBoost = 50;
       //public float speedBoost = 2f;
@@ -16,16 +18,19 @@ public class PickUp : MonoBehaviour{
       void Start(){
             gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
             //playerPowerupVFX = GameObject.FindWithTag("Player").GetComponent<playerVFX>();
+		
       }
 
       public void OnTriggerEnter2D (Collider2D other){
             if (other.gameObject.tag == "Player"){
                   //GetComponent<AudioSource>().Play();
+				  StartCoroutine(HideThis());
                   StartCoroutine(DestroyThis());
-
+				   heartSFX.Play();
+				isHealthPickUp = true;
                   if (isHealthPickUp == true) {
                         gameHandler.playerGetHit(healthBoost * -1);
-                        //playerPowerupVFX.powerup();
+                        heartSFX.Play();
                   }
 
                   //if (isSpeedBoostPickUp == true) {
@@ -36,8 +41,11 @@ public class PickUp : MonoBehaviour{
       }
 
       IEnumerator DestroyThis(){
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(1.5f);
             Destroy(gameObject);
       }
-
+		IEnumerator HideThis(){
+            yield return new WaitForSeconds(0.2f);
+            GameObject.Find ("Circle").transform.localScale = new Vector3(0, 0, 0);
+      }
 }
