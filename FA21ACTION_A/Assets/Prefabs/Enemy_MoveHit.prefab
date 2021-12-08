@@ -179,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   speed: 4
-  damage: 10
+  damage: 1
   EnemyLives: 3
   attackRange: 10
   isAttacking: 0

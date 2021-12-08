@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameHandlerObj: {fileID: 0}
-  damage: 3
+  damage: 1
+  backToStart: {fileID: 0}
 --- !u!60 &7019444120087873492
 PolygonCollider2D:
   m_ObjectHideFlags: 0

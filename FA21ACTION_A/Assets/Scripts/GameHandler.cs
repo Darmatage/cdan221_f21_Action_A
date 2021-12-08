@@ -9,8 +9,8 @@ using UnityEngine.Audio;
 public class GameHandler : MonoBehaviour {
 
       private GameObject player;
-      public static int playerHealth;
-      public int StartPlayerHealth = 100;
+      //public static int playerHealth;
+      //public int StartPlayerHealth = 4;
      public GameObject healthText;
 	  public static int Lives = 4;
        public int maxLives = 4;
@@ -18,8 +18,8 @@ public class GameHandler : MonoBehaviour {
        public GameObject lifeHeart2;
        public GameObject lifeHeart3;
        public GameObject lifeHeart4;
-	     public static int MaxHealth = 100;
-       public static int CurrentHealth = 100;
+	    // public static int MaxHealth = 4;
+       //public static int CurrentHealth = 4;
        private string sceneName;
 
 
@@ -47,8 +47,8 @@ public class GameHandler : MonoBehaviour {
       void Start(){
 		    pauseMenuUI.SetActive(false);
             player = GameObject.FindWithTag("Player");
-            playerHealth = StartPlayerHealth;
-            updateStatsDisplay();       
+	//playerHealth = StartPlayerHealth;
+            //updateStatsDisplay();       
       }
  void Update (){
                 if (Input.GetKeyDown(KeyCode.Escape)){
@@ -78,18 +78,19 @@ public class GameHandler : MonoBehaviour {
                 volumeLevel = sliderValue;
         }
 		
-      public void playerGetTokens(int newTokens){
-            gotTokens += newTokens;
-            updateStatsDisplay();
-      }
+      // public void playerGetTokens(int newTokens){
+            // gotTokens += newTokens;
+            // updateStatsDisplay();
+      // }
      public void TakeDamage(int damage){
-              CurrentHealth -= damage;
-              UpdateHealth();
+              Lives -= damage;
+              UpdateLives(-1,"down");
               sceneName = SceneManager.GetActiveScene().name;
-              if (CurrentHealth >= MaxHealth){CurrentHealth = MaxHealth;}
-              if ((CurrentHealth <= 0) && (sceneName != "EndLose")&& (Lives <= 0)){
+              if (Lives >= maxLives){Lives = maxLives;}
+              if ((Lives <= 0) && (sceneName != "EndLose")){
                      //SceneManager.LoadScene("EndLose");
-               } else if (CurrentHealth <= 0){ UpdateLives(-1, "down"); }
+               } 
+			   //else if (CurrentHealth <= 0){ UpdateLives(-1, "down"); }
        }
 	   
 	   public void UpdateLives(int lifeChange, string changeDir){
@@ -106,34 +107,34 @@ public class GameHandler : MonoBehaviour {
               }
        }
 
-       public void UpdateHealth(){
-              Text healthTextB = healthText.GetComponent<Text>();
-              healthTextB.text = "Current Health: " + CurrentHealth + "\n Max Health: " + MaxHealth;
-       }
-      public void playerGetHit(int damage){
-           if (isDefending == false){
-                  playerHealth -= damage;
-                  updateStatsDisplay();
-                  player.GetComponent<PlayerHurt>().playerHit();
-            }
+       // public void UpdateHealth(){
+              // Text healthTextB = healthText.GetComponent<Text>();
+              // healthTextB.text = "Current Health: " + CurrentHealth + "\n Max Health: " + MaxHealth;
+       // }
+      // public void playerGetHit(int damage){
+           // if (isDefending == false){
+                  // Lives -= damage;
+                  // updateStatsDisplay();
+                  // player.GetComponent<PlayerHurt>().playerHit();
+            // }
 
-           if (playerHealth >= StartPlayerHealth){
-                  playerHealth = StartPlayerHealth;
-            }
+           // if (playerHealth >= StartPlayerHealth){
+                  // playerHealth = StartPlayerHealth;
+            // }
 
-           if (playerHealth <= 0){
-                  playerHealth = 0;
-                  playerDies();
-            }
-      }
+           // if (playerHealth <= 0){
+                  // playerHealth = 0;
+                  // playerDies();
+            // }
+      // }
 
-      public void updateStatsDisplay(){
-            Text healthTextTemp = healthText.GetComponent<Text>();
-            healthTextTemp.text = "HEALTH: " + playerHealth;
+      // public void updateStatsDisplay(){
+            // Text healthTextTemp = healthText.GetComponent<Text>();
+            // healthTextTemp.text = "HEALTH: " + playerHealth;
 
-            Text tokensTextTemp = tokensText.GetComponent<Text>();
-            tokensTextTemp.text = "GOLD: " + gotTokens;
-      }
+            // Text tokensTextTemp = tokensText.GetComponent<Text>();
+            // tokensTextTemp.text = "GOLD: " + gotTokens;
+      // }
 
       public void playerDies(){
             player.GetComponent<PlayerHurt>().playerDead();
@@ -154,7 +155,7 @@ public class GameHandler : MonoBehaviour {
       public void RestartGame() {
             SceneManager.LoadScene("MainMenu");
 			Time.timeScale = 1f;
-            playerHealth = StartPlayerHealth;
+            Lives = maxLives;
       }
 
       public void QuitGame() {

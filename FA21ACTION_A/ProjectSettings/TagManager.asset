@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - PauseMenuSlider
   - Checkpoint
+  - PlayerSpawnStart
   layers:
   - Default
   - TransparentFX

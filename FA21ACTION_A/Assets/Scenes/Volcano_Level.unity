@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 127469688}
   - component: {fileID: 127469687}
   m_Layer: 6
-  m_Name: Ground (1)
+  m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -229,8 +229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameHandlerObj: {fileID: 858194913}
-  damage: 100
-  backToStart: {fileID: 0}
+  damage: 1
+  backToStart: {fileID: 1421290431}
 --- !u!66 &127469688
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -2304,6 +2304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerSpawnStart
       objectReference: {fileID: 0}
+    - target: {fileID: 5517955838830997841, guid: a979f006cc54da04dac2565888b6b5fd, type: 3}
+      propertyPath: m_TagString
+      value: PlayerSpawnStart
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a979f006cc54da04dac2565888b6b5fd, type: 3}
 --- !u!1001 &490314639
@@ -3768,7 +3772,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615853325}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 4282adb439b9b4446980286ef91f6e71, type: 2}
   m_audioClip: {fileID: 8300000, guid: c04e45efe3a2d5544844eab43b97307a, type: 3}
@@ -4240,15 +4244,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7931985293435922691, guid: 24bce4566dc9cb841bec6002b3a754fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.3
+      value: -3.14
       objectReference: {fileID: 0}
     - target: {fileID: 7931985293435922691, guid: 24bce4566dc9cb841bec6002b3a754fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.19
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 7931985293435922691, guid: 24bce4566dc9cb841bec6002b3a754fe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.6786933
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7931985293435922691, guid: 24bce4566dc9cb841bec6002b3a754fe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17806,11 +17810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3850095037142769252, guid: 6c7de2fb96f8c7342b2347e0626c428c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5.05
       objectReference: {fileID: 0}
     - target: {fileID: 3850095037142769252, guid: 6c7de2fb96f8c7342b2347e0626c428c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 14.44
       objectReference: {fileID: 0}
     - target: {fileID: 3850095037142769252, guid: 6c7de2fb96f8c7342b2347e0626c428c, type: 3}
       propertyPath: m_LocalPosition.z

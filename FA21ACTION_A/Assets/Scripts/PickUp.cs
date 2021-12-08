@@ -11,7 +11,7 @@ public class PickUp : MonoBehaviour{
 	   public AudioSource heartSFX;
 
 
-      public int healthBoost = 50;
+      public int healthBoost = 1;
       //public float speedBoost = 2f;
       //public float speedTime = 2f;
 
@@ -29,7 +29,7 @@ public class PickUp : MonoBehaviour{
 				   heartSFX.Play();
 				isHealthPickUp = true;
                   if (isHealthPickUp == true) {
-                        gameHandler.playerGetHit(healthBoost * -1);
+                        gameHandler.UpdateLives(healthBoost,"up");
                         heartSFX.Play();
                   }
 

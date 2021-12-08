@@ -9,7 +9,7 @@ public class EnemyMoveHit : MonoBehaviour {
 	 //private bool isCoalAttack;
     public float speed = 4f;
     private Transform target;
-    public int damage = 5;
+    public int damage = 1;
 
     public int EnemyLives = 3;
     private Renderer rend;
@@ -60,7 +60,7 @@ public class EnemyMoveHit : MonoBehaviour {
               if ((collision.gameObject.tag == "Player")&&(this.GetComponent<EnemyPossession>().isPossessed == false)) {
                      isAttacking = true;
                     // anim.SetBool("isCoalAttack", true);
-                     gameHandler.playerGetHit(damage);
+                     gameHandler.TakeDamage(damage);
                      rend.material.color = new Color(2.4f, 0.9f, 0.9f, 0.5f);
                      StartCoroutine(HitEnemy());
               }

@@ -9,18 +9,20 @@ public class PlayerRespawn : MonoBehaviour {
 
        void Start() {
               gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
+			  pSpawn = GameObject.FindWithTag("PlayerSpawnStart").GetComponent<Transform>();
        }
+	   
 
-       void Update() {
-              if (pSpawn != null){
-                     if ((GameHandler.CurrentHealth <= 0)&& (GameHandler.Lives > 0)){
+       // void Update() {
+              // if (pSpawn != null){
+                     // if ((GameHandler.CurrentHealth <= 0)&& (GameHandler.Lives > 0)){
                             //comment out lines from GameHandler about EndLose screen
-                            Debug.Log("I am going back to the last spawn point");
-                            Vector3 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
-                            gameObject.transform.position = pSpn2;
-                     }
-              }
-       }
+                            // Debug.Log("I am going back to the last spawn point");
+                            // Vector3 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
+                            // gameObject.transform.position = pSpn2;
+                     // }
+              // }
+       // }
 
        public void OnTriggerEnter2D(Collider2D other) {
               if (other.gameObject.tag == "CheckPoint"){
