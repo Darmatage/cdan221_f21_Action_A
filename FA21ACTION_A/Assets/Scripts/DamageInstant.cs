@@ -17,7 +17,7 @@ public class DamageInstant : MonoBehaviour {
        public void OnCollisionEnter2D(Collision2D other) {
               if (other.gameObject.tag == "Player") {
                      gameHandlerObj.TakeDamage(damage);
-                     other.transform.position = new Vector2(backToStart.position.x, backToStart.position.y);
+                     //other.transform.position = new Vector2(backToStart.position.x, backToStart.position.y);
               }
        }
 }

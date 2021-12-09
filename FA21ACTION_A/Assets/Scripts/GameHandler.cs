@@ -89,6 +89,11 @@ public class GameHandler : MonoBehaviour {
      public void TakeDamage(int damage){
               Lives -= damage;
               UpdateLives(-1,"down");
+			  
+	 if(Lives >= 1){
+		player.GetComponent<PlayerRespawn>().RespawnChar();
+	 }
+			  
               sceneName = SceneManager.GetActiveScene().name;
               if (Lives >= maxLives){Lives = maxLives;}
               if ((Lives <= 0) && (sceneName != "EndLose")){
