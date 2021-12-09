@@ -19,6 +19,8 @@ public class PlayerPossession : MonoBehaviour{
     void Update(){
 		if ((Input.GetButtonDown("Possession")) && (isEnemyInRange())) {
             Possess();
+			anim.SetTrigger("PlayerDoesControl");
+			
 			//Debug.Log("I possess");
             //possessSFX.Play();
         }
@@ -27,6 +29,7 @@ public class PlayerPossession : MonoBehaviour{
 	public void Possess(){
 		//take 1 or more enemies in range
 		//activate their "isPossessed" variable
+		
         Collider2D[] posEnemies = Physics2D.OverlapCircleAll(transform.position, possessRange, enemyLayer);
         
         foreach(Collider2D enemy in posEnemies){
