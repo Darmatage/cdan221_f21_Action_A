@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
 
+
       public Animator animator;
       public Rigidbody2D rb2D;
       private bool FaceRight = true; // determine which way player is facing.
