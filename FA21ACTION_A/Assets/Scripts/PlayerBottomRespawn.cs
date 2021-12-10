@@ -9,6 +9,7 @@ public class PlayerBottomRespawn : MonoBehaviour {
        public Transform pSpawn;
        public int damage = 1;
 
+
        void Start() {
               playerPos = GameObject.FindWithTag("Player").GetComponent<Transform>();
               gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();

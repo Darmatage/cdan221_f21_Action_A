@@ -6,6 +6,7 @@ public class PlayerRespawn : MonoBehaviour {
 
        public GameHandler gameHandler;
        public Transform pSpawn;       // current player spawn point
+	   	public AudioSource HealthupSFX;
 
        void Start() {
               gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
@@ -31,14 +32,16 @@ public class PlayerRespawn : MonoBehaviour {
 				  Debug.Log("i hit a checkpoint: " + pSpawn);
                             pSpawn = other.gameObject.transform;
                             GameObject thisCheckpoint = other.gameObject;
+							HealthupSFX.Play();
                             StopCoroutine(changeColor(thisCheckpoint));
                             StartCoroutine(changeColor(thisCheckpoint));
+						
               }
        }
 
       IEnumerator changeColor(GameObject thisCheckpoint){
              Renderer checkRend = thisCheckpoint.GetComponentInChildren<Renderer>();
-             checkRend.material.color = new Color(2.4f, 0.9f, 0.9f, 0.5f);
+             checkRend.material.color = new Color(2.4f, 2.9f, 2.9f, 2.5f);
              yield return new WaitForSeconds(0.5f);
              checkRend.material.color = Color.white;
        }

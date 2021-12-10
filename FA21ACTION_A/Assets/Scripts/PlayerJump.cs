@@ -12,7 +12,7 @@ public class PlayerJump : MonoBehaviour {
       public LayerMask enemyLayer;
       public bool isAlive = true;
 	  //public float timer =0.02f; 
-      //public AudioSource JumpSFX;
+      public AudioSource JumpSFX;
 
       void Start(){
             animator = gameObject.GetComponentInChildren<Animator>();
@@ -24,7 +24,7 @@ public class PlayerJump : MonoBehaviour {
                 animator.SetTrigger("PlayerDoesJump"); 
 				//StartCoroutine(myDelay());
                Jump();
-               // JumpSFX.Play();
+                JumpSFX.Play();
             }
       }
 

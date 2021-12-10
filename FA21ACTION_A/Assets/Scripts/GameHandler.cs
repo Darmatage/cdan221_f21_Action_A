@@ -166,7 +166,7 @@ public class GameHandler : MonoBehaviour {
       }
 
       public void StartGame() {
-            SceneManager.LoadScene("Tutorial");
+       StartCoroutine(myDelay2());     
       }
 
       public void RestartGame() {
@@ -186,4 +186,10 @@ public class GameHandler : MonoBehaviour {
       public void Credits() {
             SceneManager.LoadScene("Credits");
       }
+	  
+	  	IEnumerator myDelay2(){
+     yield return new WaitForSeconds(2f); //will delay about two seconds. Set this number as desired
+	  Debug.Log("2 second past");
+     SceneManager.LoadScene("Tutorial");
+}
 }
