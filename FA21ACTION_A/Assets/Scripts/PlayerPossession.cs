@@ -7,6 +7,7 @@ public class PlayerPossession : MonoBehaviour{
 	private Renderer rend;
 	public float possessRange = 10f;
 	public LayerMask enemyLayer;
+	public AudioSource possessSFX;
 	
     // Start is called before the first frame update
     void Start(){
@@ -22,7 +23,7 @@ public class PlayerPossession : MonoBehaviour{
 			anim.SetTrigger("PlayerDoesControl");
 			
 			//Debug.Log("I possess");
-            //possessSFX.Play();
+            possessSFX.Play();
         }
     }
 	
