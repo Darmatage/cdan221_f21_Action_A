@@ -24,7 +24,7 @@ public class PickUp : MonoBehaviour{
       public void OnTriggerEnter2D (Collider2D other){
             if (other.gameObject.tag == "Player"){
                   //GetComponent<AudioSource>().Play();
-				  StartCoroutine(HideThis());
+				  // StartCoroutine(HideThis());
                   StartCoroutine(DestroyThis());
 				   heartSFX.Play();
 				isHealthPickUp = true;
@@ -41,11 +41,11 @@ public class PickUp : MonoBehaviour{
       }
 
       IEnumerator DestroyThis(){
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(0.3f);
             Destroy(gameObject);
       }
-		IEnumerator HideThis(){
-            yield return new WaitForSeconds(0.2f);
-            GameObject.Find ("Circle").transform.localScale = new Vector3(0, 0, 0);
-      }
+		// IEnumerator HideThis(){
+            // yield return new WaitForSeconds(0.2f);
+            // GameObject.Find ("Circle").transform.localScale = new Vector3(0, 0, 0);
+      // }
 }

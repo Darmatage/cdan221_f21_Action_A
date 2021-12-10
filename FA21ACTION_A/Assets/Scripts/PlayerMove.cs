@@ -11,7 +11,7 @@ public class PlayerMove : MonoBehaviour {
       public static float runSpeed = 10f;
       public float startSpeed = 10f;
       public bool isAlive = true;
-      //public AudioSource WalkSFX;
+      public AudioSource WalkSFX;
       private Vector3 hMove;
 		
       void Start(){
@@ -29,12 +29,12 @@ public class PlayerMove : MonoBehaviour {
 
               if (Input.GetAxis("Horizontal") != 0){
                     animator.SetBool ("Walk", true);
-                   // if (!WalkSFX.isPlaying){
-                         // WalkSFX.Play();
-                    // }
+                    if (!WalkSFX.isPlaying){
+                          WalkSFX.Play();
+                     }
               } else {
                   animator.SetBool ("Walk", false);
-                  // WalkSFX.Stop();
+                   WalkSFX.Stop();
              }
 
             // NOTE: if input is moving the Player right and Player faces left, turn, and vice-versa

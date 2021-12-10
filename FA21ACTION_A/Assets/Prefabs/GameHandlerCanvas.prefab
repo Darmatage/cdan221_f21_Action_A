@@ -1865,7 +1865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 8751306383459446947}
-  maxLives: 4
+  maxLives: 8
   lifeHeart1: {fileID: 4403339336483267981}
   lifeHeart2: {fileID: 178714510097975919}
   lifeHeart3: {fileID: 4764109354549478576}
