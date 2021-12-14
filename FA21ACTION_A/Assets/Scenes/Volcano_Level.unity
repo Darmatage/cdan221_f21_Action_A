@@ -5426,6 +5426,18 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6215049431139264137, guid: 2c5c15b22ebd4604983657eff66f8eb8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1616832320}
+    - target: {fileID: 6215049431139264137, guid: 2c5c15b22ebd4604983657eff66f8eb8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NPCdialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6215049431139264137, guid: 2c5c15b22ebd4604983657eff66f8eb8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NPC_Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6532158856767421532, guid: 2c5c15b22ebd4604983657eff66f8eb8, type: 3}
       propertyPath: m_Name
       value: GameHandlerCanvas
@@ -6179,8 +6191,9 @@ MonoBehaviour:
   pressSpaceMSG: {fileID: 897904025}
   dialogueText: {fileID: 897904024}
   playerInRange: 0
-  primeInt: 0
-  dialogue0: 
+  gameHandler: {fileID: 0}
+  primeInt: 1
+  dialogue0: The lava might look delicous but be careful not to eat it!
   dialogue1: 
   dialogue2: 
   dialogue3: 

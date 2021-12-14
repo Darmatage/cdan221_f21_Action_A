@@ -23,6 +23,7 @@ public class GameHandler : MonoBehaviour {
        public GameObject lifeHeart7;
        public GameObject lifeHeart8;
 	  public static bool hasWand = false;
+	  public static bool npcTalking = false;
 
 	    // public static int MaxHealth = 4;
        //public static int CurrentHealth = 4;

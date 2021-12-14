@@ -9,7 +9,7 @@ public class NPC_Dialogue : MonoBehaviour {
        public GameObject pressSpaceMSG;
        public Text dialogueText;
        public bool playerInRange = false;
-	   
+	   public GameHandler gameHandler;
        public int primeInt = 0;
        public string dialogue0;
        public string dialogue1;
@@ -21,6 +21,7 @@ public class NPC_Dialogue : MonoBehaviour {
        void Start () {
               //anim = gameObject.GetComponentInChildren<Animator>();
               //anim.SetBool("Chat", false);
+			  gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
               dialogueBox.SetActive(false);
               pressSpaceMSG.SetActive(false);
 			 
@@ -35,6 +36,7 @@ public class NPC_Dialogue : MonoBehaviour {
                    } else {
                         NPCdialogue();
                         dialogueBox.SetActive(true);
+						GameHandler.npcTalking = true;
 					
                         pressSpaceMSG.SetActive(false);
                         //anim.SetBool("Chat", true);
@@ -42,7 +44,7 @@ public class NPC_Dialogue : MonoBehaviour {
             }
        }
 
-       public void NPCdialogue (){
+       public void NPCdialogue(){
               primeInt +=1;
 
               if (primeInt == 1){

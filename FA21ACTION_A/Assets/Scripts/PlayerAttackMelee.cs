@@ -11,13 +11,15 @@ public class PlayerAttackMelee : MonoBehaviour{
       private float nextAttackTime = 0f;
       public int attackDamage = 40;
       public LayerMask enemyLayers;
+	  public GameHandler gameHandler;
 
       void Start(){
            anim = gameObject.GetComponentInChildren<Animator>();
+		   gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
       }
 
       void Update(){
-           if (Time.time >= nextAttackTime){
+           if (Time.time >= nextAttackTime && GameHandler.npcTalking == false){
                   //if (Input.GetKeyDown(KeyCode.Space))
                  if (Input.GetAxis("Attack") > 0){
                         Attack();

@@ -11,7 +11,7 @@ public class AudioHandler : MonoBehaviour
 	
 	
 	   void Update(){
-                 if (Input.GetButtonDown("Attack")&& GameHandler.GameisPaused==false){
+                 if (Input.GetButtonDown("Attack") && GameHandler.GameisPaused==false && GameHandler.npcTalking==false){
               PlayRandom();
        }
 			}
