@@ -73,6 +73,7 @@ public class NPC_Dialogue : MonoBehaviour {
 
               if (primeInt == 7){
                      dialogueBox.SetActive(false);
+					 GameHandler.npcTalking = false;
               }
        }
 
