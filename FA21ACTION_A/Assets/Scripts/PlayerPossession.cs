@@ -8,17 +8,19 @@ public class PlayerPossession : MonoBehaviour{
 	public float possessRange = 10f;
 	public LayerMask enemyLayer;
 	public AudioSource possessSFX;
+	public GameHandler gameHandlerObj;
 	
     // Start is called before the first frame update
     void Start(){
 		anim = GetComponentInChildren<Animator>();
 		rend = GetComponentInChildren<Renderer> ();
+		gameHandlerObj = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
       
     }
 
     // Update is called once per frame
     void Update(){
-		if ((Input.GetButtonDown("Possession")) && (isEnemyInRange())) {
+		if ((Input.GetButtonDown("Possession")) && (isEnemyInRange()) && (GameHandler.hasWand == true)){
             Possess();
 			anim.SetTrigger("PlayerDoesControl");
 			

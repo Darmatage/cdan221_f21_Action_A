@@ -22,6 +22,8 @@ public class GameHandler : MonoBehaviour {
        public GameObject lifeHeart6;
        public GameObject lifeHeart7;
        public GameObject lifeHeart8;
+	  public static bool hasWand = false;
+
 	    // public static int MaxHealth = 4;
        //public static int CurrentHealth = 4;
        private string sceneName;
@@ -63,6 +65,7 @@ public class GameHandler : MonoBehaviour {
                                 Pause();
                         }
                 }
+				
         }
 
         void Pause(){
@@ -153,6 +156,7 @@ public class GameHandler : MonoBehaviour {
             // tokensTextTemp.text = "GOLD: " + gotTokens;
       // }
 
+	
       public void playerDies(){
             player.GetComponent<PlayerHurt>().playerDead();
             StartCoroutine(DeathPause());

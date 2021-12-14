@@ -34,8 +34,9 @@ public class PlayerRespawn : MonoBehaviour {
 				  Debug.Log("i hit a checkpoint: " + pSpawn);
                             pSpawn = other.gameObject.transform;
                             GameObject thisCheckpoint = other.gameObject;
-							HealthupSFX.Play();
+							
 							if(primeInt==1){
+								HealthupSFX.Play();
 							gameHandler.UpdateLives(1,"up");
 							gameHandler.UpdateLives(1,"up");
 							gameHandler.UpdateLives(1,"up");
