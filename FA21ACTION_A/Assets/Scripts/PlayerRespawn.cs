@@ -7,6 +7,7 @@ public class PlayerRespawn : MonoBehaviour {
        public GameHandler gameHandler;
        public Transform pSpawn;       // current player spawn point
 	   	public AudioSource HealthupSFX;
+		private int primeInt = 0;
 
        void Start() {
               gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
@@ -27,12 +28,23 @@ public class PlayerRespawn : MonoBehaviour {
 
        public void OnTriggerEnter2D(Collider2D other) {
               if (other.gameObject.tag == "Checkpoint"){
+				   primeInt +=1;
 				  
 				  
 				  Debug.Log("i hit a checkpoint: " + pSpawn);
                             pSpawn = other.gameObject.transform;
                             GameObject thisCheckpoint = other.gameObject;
 							HealthupSFX.Play();
+							if(primeInt==1){
+							gameHandler.UpdateLives(1,"up");
+							gameHandler.UpdateLives(1,"up");
+							gameHandler.UpdateLives(1,"up");
+							gameHandler.UpdateLives(1,"up");
+							gameHandler.UpdateLives(1,"up");
+							gameHandler.UpdateLives(1,"up");
+							gameHandler.UpdateLives(1,"up");
+							gameHandler.UpdateLives(1,"up");
+							}
                             StopCoroutine(changeColor(thisCheckpoint));
                             StartCoroutine(changeColor(thisCheckpoint));
 						

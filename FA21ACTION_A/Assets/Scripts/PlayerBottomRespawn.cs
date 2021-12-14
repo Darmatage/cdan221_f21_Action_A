@@ -20,7 +20,7 @@ public class PlayerBottomRespawn : MonoBehaviour {
                      if (transform.position.y >= playerPos.position.y){
                             //instantiate a particle effect
                             Debug.Log("I am going back to the start");
-                            gameHandler.TakeDamage(damage);
+                            //gameHandler.TakeDamage(damage);
                             Vector2 pSpn2 = new Vector2(pSpawn.position.x, pSpawn.position.y);
                             playerPos.position = pSpn2;
                      }
