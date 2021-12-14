@@ -9,6 +9,7 @@ public class NPC_Dialogue : MonoBehaviour {
        public GameObject pressSpaceMSG;
        public Text dialogueText;
        public bool playerInRange = false;
+	   
        public int primeInt = 0;
        public string dialogue0;
        public string dialogue1;
@@ -22,6 +23,7 @@ public class NPC_Dialogue : MonoBehaviour {
               //anim.SetBool("Chat", false);
               dialogueBox.SetActive(false);
               pressSpaceMSG.SetActive(false);
+			 
        }
 
        void Update () {
@@ -33,6 +35,7 @@ public class NPC_Dialogue : MonoBehaviour {
                    } else {
                         NPCdialogue();
                         dialogueBox.SetActive(true);
+					
                         pressSpaceMSG.SetActive(false);
                         //anim.SetBool("Chat", true);
                    }
