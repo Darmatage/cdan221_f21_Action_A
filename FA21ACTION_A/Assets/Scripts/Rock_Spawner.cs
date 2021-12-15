@@ -39,4 +39,12 @@ public class Rock_Spawner : MonoBehaviour {
             else if (SPnum == 5){ spawnPoint = spawnPoint5;}
             Instantiate(rockPrefab, spawnPoint.position, Quaternion.identity);
       }
+	  
+		void OnCollisionEnter2D(Collision2D other){
+          if (other.gameObject.tag == "Rock"){
+               Destroy(other.gameObject);
+             
+          }
+		
+   }
 }

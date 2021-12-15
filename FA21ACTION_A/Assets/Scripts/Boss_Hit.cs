@@ -62,6 +62,11 @@ public class Boss_Hit : MonoBehaviour{
                      //gameHandler.TakeDamage(damage);
                      //rend.material.color = new Color(2.4f, 0.9f, 0.9f, 0.5f);
                      StartCoroutine(HitEnemy());
+					 
+					 if (collision.gameObject.tag == "Rock"){
+               Destroy(collision.gameObject);
+             
+          }
               }
     }
 
@@ -71,6 +76,7 @@ public class Boss_Hit : MonoBehaviour{
                     // anim.SetBool("isCoalAttack", false);
               }
     }
+
 
     IEnumerator HitEnemy(){
               yield return new WaitForSeconds(0.5f);

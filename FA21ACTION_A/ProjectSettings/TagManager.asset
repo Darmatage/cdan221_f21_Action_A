@@ -11,6 +11,7 @@ TagManager:
   - PlayerSpawnStart
   - DialogueManager
   - Rock
+  - Ground
   layers:
   - Default
   - TransparentFX

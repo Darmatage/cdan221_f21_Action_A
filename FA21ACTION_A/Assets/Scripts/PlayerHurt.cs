@@ -20,4 +20,12 @@ public class PlayerHurt: MonoBehaviour{
             rb2D.isKinematic = true;
             //animator.SetTrigger ("Dead");
       }
+	  
+	  void OnCollisionEnter2D(Collision2D other){
+          if (other.gameObject.tag == "Rock"){
+               Destroy(other.gameObject);
+             
+          }
+		
+   }
 }
