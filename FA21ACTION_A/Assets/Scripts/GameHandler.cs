@@ -100,8 +100,8 @@ public class GameHandler : MonoBehaviour {
 			  
               sceneName = SceneManager.GetActiveScene().name;
               if (Lives >= maxLives){Lives = maxLives;}
-              if ((Lives <= 0) && (sceneName != "EndLose")){
-                     //SceneManager.LoadScene("EndLose");
+              if ((Lives <= 0) && (sceneName != "End_Lose")){
+                     SceneManager.LoadScene("End_Lose");
                } 
 			   //else if (CurrentHealth <= 0){ UpdateLives(-1, "down"); }
        }
@@ -167,7 +167,7 @@ public class GameHandler : MonoBehaviour {
             player.GetComponent<PlayerMove>().isAlive = false;
             player.GetComponent<PlayerJump>().isAlive = false;
             yield return new WaitForSeconds(1.0f);
-            SceneManager.LoadScene("EndLose");
+            SceneManager.LoadScene("End_Lose");
       }
 
       public void StartGame() {
