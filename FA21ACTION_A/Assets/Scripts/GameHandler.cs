@@ -10,7 +10,7 @@ public class GameHandler : MonoBehaviour {
 
       private GameObject player;
       //public static int playerHealth;
-      //public int StartPlayerHealth = 4;
+      //public int StartPlayerHealth = 8;
      public GameObject healthText;
 	  public static int Lives = 8;
        public int maxLives = 8;
@@ -24,9 +24,10 @@ public class GameHandler : MonoBehaviour {
        public GameObject lifeHeart8;
 	  public static bool hasWand = false;
 	  public static bool npcTalking = false;
+	  public static bool hasKey = false;
 
-	    // public static int MaxHealth = 4;
-       //public static int CurrentHealth = 4;
+	    // public static int MaxHealth = 8;
+       //public static int CurrentHealth = 8;
        private string sceneName;
 
 
