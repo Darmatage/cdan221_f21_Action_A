@@ -9,6 +9,7 @@ TagManager:
   - PauseMenuSlider
   - Checkpoint
   - PlayerSpawnStart
+  - DialogueManager
   layers:
   - Default
   - TransparentFX
