@@ -13,11 +13,11 @@ public class NPCDialogueManager : MonoBehaviour
 	   public GameHandler gameHandler;
 
 
-       void Start(){
-		   gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
-              dialogueBox.SetActive(false);
-              dialogueLength = dialogue.Length; //allows us test dialogue without an NPC
-       }
+	void Start(){
+		gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
+		dialogueBox.SetActive(false);
+		dialogueLength = dialogue.Length; //allows us test dialogue without an NPC
+	}
 
        void Update(){
               //temporary testing before NPC is created
@@ -31,13 +31,12 @@ public class NPCDialogueManager : MonoBehaviour
               }
        }
 
-       public void OpenDialogue(){
-		   GameHandler.npcTalking = true;
-              dialogueBox.SetActive(true);
-       }
+	public void OpenDialogue(){
+		GameHandler.npcTalking = true;
+		dialogueBox.SetActive(true);
+	}
 
        public void CloseDialogue(){
-		   
               dialogueBox.SetActive(false);
               dialogueText.text = "..."; //reset text
               counter = 0; //reset counter
