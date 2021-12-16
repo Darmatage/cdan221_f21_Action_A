@@ -43,14 +43,20 @@ public class BatDamage : MonoBehaviour {
               if ((target != null) && (DistToPlayer <= attackRange)){
                      transform.position = Vector2.MoveTowards (transform.position, target.position, speed * Time.deltaTime);
 					 anim.SetBool("isBatAttack", true);
+					 GameHandler.BatInRange = true;
                      //if (isAttacking == false) {
                             //anim.SetBool("isCoalAttack", false);
                      // }
 			  }
-				else  {anim.SetBool("isBatAttack", false);}
+				else  {anim.SetBool("isBatAttack", false);
+				GameHandler.BatInRange = false;
+				}
+				
                
 		  }
-		  else  {anim.SetBool("isBatAttack", false);}
+		  else  {anim.SetBool("isBatAttack", false);
+		  GameHandler.BatInRange = false;
+		  }
 
     }
 

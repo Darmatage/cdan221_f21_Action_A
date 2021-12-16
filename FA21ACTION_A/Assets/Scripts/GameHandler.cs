@@ -25,6 +25,9 @@ public class GameHandler : MonoBehaviour {
 	  public static bool hasWand = false;
 	  public static bool npcTalking = false;
 	  public static bool hasKey = false;
+	   public static bool CoalInRange = false;
+	  public static bool BatInRange = false;
+	  
 
 	    // public static int MaxHealth = 8;
        //public static int CurrentHealth = 8;

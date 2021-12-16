@@ -16,6 +16,7 @@ public class BatPossession : MonoBehaviour
 	private bool FaceRight = true; // determine which way player is facing.
 	public static float runSpeed = 10f;
 	public float jumpForce = 5f;
+
 	
 	private Renderer rend;
 
@@ -24,7 +25,9 @@ public class BatPossession : MonoBehaviour
 		possessionTimerStart = possessionTimer;
 		//rb2D = transform.GetComponent<Rigidbody2D>();
         rend = GetComponentInChildren<Renderer>();
-    }
+	
+        }
+    
 	
 	void Update (){
 		//possessed actions

@@ -11,6 +11,7 @@ public class EnemyPossession : MonoBehaviour
 	private int possessionTimerStart;
     private float theTimer = 0f;
     //public GameObject timerText;
+
 	
 	public Rigidbody2D rb2D;
 	private Vector3 hMove;
@@ -25,7 +26,9 @@ public class EnemyPossession : MonoBehaviour
 		possessionTimerStart = possessionTimer;
 		rb2D = transform.GetComponent<Rigidbody2D>();
         rend = GetComponentInChildren<Renderer>();
-    }
+		
+        }
+    
 	
 	void Update (){
 		//possessed actions

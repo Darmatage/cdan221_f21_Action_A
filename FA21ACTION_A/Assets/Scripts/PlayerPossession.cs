@@ -37,7 +37,12 @@ public class PlayerPossession : MonoBehaviour{
         
         foreach(Collider2D enemy in posEnemies){
             Debug.Log("I possess " + enemy.name);
+			if (GameHandler.CoalInRange == true){
             enemy.GetComponent<EnemyPossession>().isPossessed=true;
+			}
+			if (GameHandler.BatInRange == true){
+			enemy.GetComponent<BatPossession>().isPossessed=true;
+			}
         }
 	}
 	

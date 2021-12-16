@@ -43,14 +43,19 @@ public class EnemyMoveHit : MonoBehaviour {
               if ((target != null) && (DistToPlayer <= attackRange)){
                      transform.position = Vector2.MoveTowards (transform.position, target.position, speed * Time.deltaTime);
 					 anim.SetBool("isCoalAttack", true);
+					 GameHandler.CoalInRange = true;
                      //if (isAttacking == false) {
                             //anim.SetBool("isCoalAttack", false);
                      // }
 			  }
-				else  {anim.SetBool("isCoalAttack", false);}
+				else  {anim.SetBool("isCoalAttack", false);
+				GameHandler.CoalInRange = true;
+				}
                
 		  }
-		  else  {anim.SetBool("isCoalAttack", false);}
+		  else  {anim.SetBool("isCoalAttack", false);
+		  GameHandler.CoalInRange = true;
+		  }
 
     }
 
