@@ -345,6 +345,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   possessSFX: {fileID: 5492852452127669000}
+  gameHandlerObj: {fileID: 0}
 --- !u!82 &5492852452127669000
 AudioSource:
   m_ObjectHideFlags: 0
@@ -469,12 +470,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 4286853014928474785}
   attackPt: {fileID: 3786172448980673564}
-  attackRange: 0.5
+  attackRange: 1
   attackRate: 2
   attackDamage: 40
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
+  gameHandler: {fileID: 0}
 --- !u!114 &6463337869131915008
 MonoBehaviour:
   m_ObjectHideFlags: 0
