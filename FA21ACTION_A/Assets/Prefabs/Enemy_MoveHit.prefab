@@ -181,7 +181,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   speed: 4
   damage: 1
-  EnemyLives: 3
+  EnemyLives: 2
   attackRange: 10
   isAttacking: 0
 --- !u!114 &4356005335417016494
