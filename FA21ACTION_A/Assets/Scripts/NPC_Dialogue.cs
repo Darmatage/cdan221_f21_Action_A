@@ -23,7 +23,7 @@ public class NPC_Dialogue : MonoBehaviour {
 			
        }
 	void Update () {
-            if ((Input.GetKeyDown(KeyCode.Space)) && (playerInRange)){ //can change the key to
+            if ((Input.GetKeyDown(KeyCode.LeftShift)) && (playerInRange)){ //can change the key to
                      dialogueMNGR.LoadDialogueArray(dialogue, dialogueLength);
                      dialogueMNGR.OpenDialogue();
 					 pressSpaceMSG.SetActive(false); 

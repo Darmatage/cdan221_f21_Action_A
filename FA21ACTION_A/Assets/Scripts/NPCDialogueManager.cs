@@ -38,7 +38,7 @@ public class NPCDialogueManager : MonoBehaviour
 
        public void CloseDialogue(){
               dialogueBox.SetActive(false);
-              dialogueText.text = "..."; //reset text
+              dialogueText.text = "Hmmmmm..."; //reset text
               counter = 0; //reset counter
 			  GameHandler.npcTalking = false;
        }
@@ -56,7 +56,7 @@ public class NPCDialogueManager : MonoBehaviour
               }
               else { //when lines are complete:
                      dialogueBox.SetActive(false); //turn off the dialogue display
-                     dialogueText.text = "..."; //reset text
+                     dialogueText.text = "Hmmmmm..."; //reset text
                      counter = 0; //reset counter
 					 GameHandler.npcTalking = false;
               }
