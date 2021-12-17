@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMeleeDamage : MonoBehaviour{
 
-      //public Animator anim;
+      public Animator anim;
        public GameObject healthLoot;
        public int maxHealth = 100;
        public int currentHealth;
@@ -12,13 +12,14 @@ public class EnemyMeleeDamage : MonoBehaviour{
 	   public AudioSource EnemyDieSFX;
 
        void Start(){
+		    anim = gameObject.GetComponentInChildren<Animator>();
               currentHealth = maxHealth;
        }
 
        public void TakeDamage(int damage = 20){
               currentHealth -= damage;
 			  EnemyHitSFX.Play();
-              //anim.SetTrigger ("Hurt");
+              anim.SetTrigger ("ishit");
               if (currentHealth <= 0){
                      Die();
 					 EnemyDieSFX.Play();

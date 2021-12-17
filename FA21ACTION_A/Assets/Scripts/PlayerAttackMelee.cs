@@ -35,6 +35,7 @@ public class PlayerAttackMelee : MonoBehaviour{
             foreach(Collider2D enemy in hitEnemies){
                   Debug.Log("We hit " + enemy.name);
                   enemy.GetComponent<EnemyMeleeDamage>().TakeDamage(attackDamage);
+				 
             }
       }
 
