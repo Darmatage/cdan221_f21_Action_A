@@ -183,6 +183,26 @@ public class GameHandler : MonoBehaviour {
        StartCoroutine(myDelay2());     
       }
 
+	public void LevelOne() {
+            SceneManager.LoadScene("Tutorial");
+      }
+	  
+		public void LevelTwo() {
+            SceneManager.LoadScene("Village_backup");
+      }
+	  
+	  public void LevelThree() {
+            SceneManager.LoadScene("CAVE_LEVEL");
+      }
+	  
+	    public void LevelFour() {
+            SceneManager.LoadScene("Volcano_Level");
+      }
+	  
+	   public void GotoLevelSelect() {
+            SceneManager.LoadScene("LevelSelect");
+      }
+	  
       public void RestartGame() {
             SceneManager.LoadScene("MainMenu");
 			Time.timeScale = 1f;
