@@ -180,22 +180,31 @@ public class GameHandler : MonoBehaviour {
       }
 
       public void StartGame() {
+	 hasWand = false;
+	
+	 hasKey = false;
        StartCoroutine(myDelay2());     
       }
 
 	public void LevelOne() {
+		 hasWand = false;
+	 hasKey = false;
             SceneManager.LoadScene("Tutorial");
       }
 	  
 		public void LevelTwo() {
+			hasWand = false;
+	   hasKey = false;
             SceneManager.LoadScene("Village_backup");
       }
 	  
 	  public void LevelThree() {
+		  hasKey = false;
             SceneManager.LoadScene("CAVE_LEVEL");
       }
 	  
 	    public void LevelFour() {
+			hasKey = false;
             SceneManager.LoadScene("Volcano_Level");
       }
 	  
@@ -225,5 +234,6 @@ public class GameHandler : MonoBehaviour {
      yield return new WaitForSeconds(2f); //will delay about two seconds. Set this number as desired
 	  Debug.Log("2 second past");
      SceneManager.LoadScene("Tutorial");
+	
 }
 }
