@@ -59,7 +59,7 @@ public class GameHandler : MonoBehaviour {
 		    pauseMenuUI.SetActive(false);
             player = GameObject.FindWithTag("Player");
 	//playerHealth = StartPlayerHealth;
-            //updateStatsDisplay();       
+            updateStatsDisplay();       
       }
  void Update (){
                 if (Input.GetKeyDown(KeyCode.Escape)){
@@ -90,10 +90,15 @@ public class GameHandler : MonoBehaviour {
                 volumeLevel = sliderValue;
         }
 		
-      // public void playerGetTokens(int newTokens){
-            // gotTokens += newTokens;
-            // updateStatsDisplay();
-      // }
+       public void playerGetTokens(int newTokens){
+            gotTokens += newTokens;
+             updateStatsDisplay();
+			 if (gotTokens >= 99){
+				 gotTokens = 0;
+				 UpdateLives(1,"up");
+				 
+			 }
+       }
      public void TakeDamage(int damage){
               Lives -= damage;
               UpdateLives(-1,"down");
@@ -153,13 +158,13 @@ public class GameHandler : MonoBehaviour {
             // }
       // }
 
-      // public void updateStatsDisplay(){
-            // Text healthTextTemp = healthText.GetComponent<Text>();
-            // healthTextTemp.text = "HEALTH: " + playerHealth;
+       public void updateStatsDisplay(){
+           // Text healthTextTemp = healthText.GetComponent<Text>();
+           // healthTextTemp.text = "HEALTH: " + playerHealth;
 
-            // Text tokensTextTemp = tokensText.GetComponent<Text>();
-            // tokensTextTemp.text = "GOLD: " + gotTokens;
-      // }
+             Text tokensTextTemp = tokensText.GetComponent<Text>();
+             tokensTextTemp.text = "SHIMMERS:" + gotTokens;
+       }
 
 	
       public void playerDies(){

@@ -9,24 +9,29 @@ public class coinpickup : MonoBehaviour
      
       //public bool isSpeedBoostPickUp = false;
 	   public AudioSource heartSFX;
-
+		public GameHandler gameHandler;
 
      
       //public float speedBoost = 2f;
       //public float speedTime = 2f;
 
       void Start(){
-            
+		  
+            gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
             //playerPowerupVFX = GameObject.FindWithTag("Player").GetComponent<playerVFX>();
 		
       }
 
       public void OnTriggerEnter2D (Collider2D other){
             if (other.gameObject.tag == "Player"){
+				 //GameHandler.gotTokens = GameHandler.gotTokens + 1;
+				
                   //GetComponent<AudioSource>().Play();
 				  // StartCoroutine(HideThis());
                   StartCoroutine(DestroyThis());
 				   heartSFX.Play();
+				  
+				   
 				
 
                   //if (isSpeedBoostPickUp == true) {
@@ -37,7 +42,9 @@ public class coinpickup : MonoBehaviour
       }
 
       IEnumerator DestroyThis(){
+		   
             yield return new WaitForSeconds(0.1f);
+			gameHandler.playerGetTokens(1);
             Destroy(gameObject);
       }
 		// IEnumerator HideThis(){

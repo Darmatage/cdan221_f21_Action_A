@@ -28,10 +28,11 @@ public class PickUp : MonoBehaviour{
                   StartCoroutine(DestroyThis());
 				   heartSFX.Play();
 				isHealthPickUp = true;
-                  if (isHealthPickUp == true) {
+				 if (isHealthPickUp == true) {
                         gameHandler.UpdateLives(healthBoost,"up");
                         heartSFX.Play();
                   }
+
 
                   //if (isSpeedBoostPickUp == true) {
                   //      other.gameObject.GetComponent<PlayerMove>().speedBoost(speedBoost, speedTime);
@@ -41,6 +42,7 @@ public class PickUp : MonoBehaviour{
       }
 
       IEnumerator DestroyThis(){
+		                   
             yield return new WaitForSeconds(0.3f);
             Destroy(gameObject);
       }
