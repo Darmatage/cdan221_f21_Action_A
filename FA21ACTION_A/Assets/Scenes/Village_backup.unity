@@ -415,6 +415,120 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7019444120087873495, guid: 35be2cd984751fe40a5067c24e3ced04, type: 3}
   m_PrefabInstance: {fileID: 64440935}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &64957443
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 947943353}
+    m_Modifications:
+    - target: {fileID: 4046229602258988257, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046229602258988257, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: gfdgf
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046229602258988257, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: fd
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046229602258988257, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: gfdgfdg
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: I need to get to the caves and this vine is blocking the way!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: I'm going to be late for work!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: Hmm, it won't listen to me...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[3]
+      value: Hmm, it won't listen to me...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[4]
+      value: Hmm, it won't listen to me...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[5]
+      value: What were we talking about again?
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 599
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -45.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790747, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_Name
+      value: GNOMENPC (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664786277845187, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+--- !u!4 &64957444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+  m_PrefabInstance: {fileID: 64957443}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &66145806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3850095037142769252, guid: 6c7de2fb96f8c7342b2347e0626c428c, type: 3}
@@ -68105,6 +68219,8 @@ Transform:
   - {fileID: 29996848}
   - {fileID: 1740814019}
   - {fileID: 2134396866}
+  - {fileID: 1610423834}
+  - {fileID: 64957444}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -72893,6 +73009,116 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1610423833
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 947943353}
+    m_Modifications:
+    - target: {fileID: 4046229602258988257, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046229602258988257, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: gfdgf
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046229602258988257, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: fd
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046229602258988257, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: gfdgfdg
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: There's been a lot of enemies coming from the cave lately
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: I hope someone will take care of them.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: Hmm, it won't listen to me...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[3]
+      value: Hmm, it won't listen to me...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[4]
+      value: Hmm, it won't listen to me...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386654354206931866, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: dialogue.Array.data[5]
+      value: What were we talking about again?
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 456.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -46.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664784860790747, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_Name
+      value: GNOMENPC (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+--- !u!4 &1610423834 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+  m_PrefabInstance: {fileID: 1610423833}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1611489029 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3850095037142769252, guid: 6c7de2fb96f8c7342b2347e0626c428c, type: 3}
@@ -87734,7 +87960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
       propertyPath: m_LocalScale.x
-      value: -0.25
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -87779,6 +88005,10 @@ PrefabInstance:
     - target: {fileID: 9201664784860790747, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
       propertyPath: m_Name
       value: GNOMENPC (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201664786277845187, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
