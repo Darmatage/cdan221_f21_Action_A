@@ -94,6 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 850fe7d607ff98f4fa49806f35f4bbbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   healthLoot: {fileID: 6423112794357027275, guid: 6c7de2fb96f8c7342b2347e0626c428c, type: 3}
   maxHealth: 1
   currentHealth: 0
