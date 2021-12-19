@@ -200,11 +200,13 @@ public class GameHandler : MonoBehaviour {
 	  
 	  public void LevelThree() {
 		  hasKey = false;
+		  hasWand = true;
             SceneManager.LoadScene("CAVE_LEVEL");
       }
 	  
 	    public void LevelFour() {
 			hasKey = false;
+			hasWand = true;
             SceneManager.LoadScene("Volcano_Level");
       }
 	  
