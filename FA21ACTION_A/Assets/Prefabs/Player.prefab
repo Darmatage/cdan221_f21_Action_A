@@ -470,7 +470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 4286853014928474785}
   attackPt: {fileID: 3786172448980673564}
-  attackRange: 1.5
+  attackRange: 1.75
   attackRate: 2
   attackDamage: 40
   enemyLayers:

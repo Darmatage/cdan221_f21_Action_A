@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heartSFX: {fileID: 6810836695111551771}
+  gameHandler: {fileID: 0}
 --- !u!114 &1859631430618481182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedS: 2.5
-  distS: 0.25
+  distS: 0.05
   SinWaveMove: 1
   randomizeSin: 1
   MoveSideToSide: 0
