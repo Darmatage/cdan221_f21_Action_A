@@ -945,7 +945,7 @@ PrefabInstance:
     - target: {fileID: 4046229602258988257, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
       propertyPath: pressSpaceMSG
       value: 
-      objectReference: {fileID: 1751567752}
+      objectReference: {fileID: 0}
     - target: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1030,6 +1030,14 @@ PrefabInstance:
     - target: {fileID: 4176122217253747608, guid: 2c5c15b22ebd4604983657eff66f8eb8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305824397536643018, guid: 2c5c15b22ebd4604983657eff66f8eb8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -494
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305824397536643018, guid: 2c5c15b22ebd4604983657eff66f8eb8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 283
       objectReference: {fileID: 0}
     - target: {fileID: 6215049431139264137, guid: 2c5c15b22ebd4604983657eff66f8eb8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -68128,7 +68136,7 @@ MonoBehaviour:
   - They might be able to help you find your way home
   playerInRange: 0
   dialogueLength: 3
-  pressSpaceMSG: {fileID: 1751567752}
+  pressSpaceMSG: {fileID: 0}
 --- !u!4 &990857996 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7019444120087873495, guid: 35be2cd984751fe40a5067c24e3ced04, type: 3}
@@ -73410,11 +73418,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9201664784860790746, guid: 9b72253d74a1f42409e939011dff726b, type: 3}
   m_PrefabInstance: {fileID: 1740814018}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1751567752 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4176122217253747608, guid: 2c5c15b22ebd4604983657eff66f8eb8, type: 3}
-  m_PrefabInstance: {fileID: 198846142}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1753599287
 GameObject:
