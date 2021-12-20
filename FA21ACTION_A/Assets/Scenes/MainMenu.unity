@@ -325,7 +325,7 @@ PrefabInstance:
     - target: {fileID: 7950010606787016067, guid: eec2c0e003b906a4caf816f2ce206f01, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: bc6bd34d577e79e46b1068a636b04008, type: 3}
+      objectReference: {fileID: 8300000, guid: 3ea50ac083ffc0041b0d1b01888403e3, type: 3}
     - target: {fileID: 7950010606787016068, guid: eec2c0e003b906a4caf816f2ce206f01, type: 3}
       propertyPath: m_Name
       value: VillageAudio
