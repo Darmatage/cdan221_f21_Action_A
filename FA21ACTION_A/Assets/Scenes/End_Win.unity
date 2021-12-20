@@ -258,6 +258,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8918776030455406791, guid: 72507cb6ea65af542b73f69f5e18506c, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 4282adb439b9b4446980286ef91f6e71, type: 2}
+    - target: {fileID: 8918776030455406791, guid: 72507cb6ea65af542b73f69f5e18506c, type: 3}
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1083918225}
